@@ -9,4 +9,7 @@
     <string name="card_hint">Chứng minh nhân dân</string>
     <string name="ok_btn">Đồng ý</string>
     <string name="strThoat">Thoát</string>
+    <string name="err_input">Nhap thieu thong tin</string>
+    <string name="nhap_thanh_cong">Nhap du lieu nhan vien THANH CONG</string>
+    <string name="nhap_that_bai">Nhap du lieu nhan vien THAT BAI</string>
 </resources>
