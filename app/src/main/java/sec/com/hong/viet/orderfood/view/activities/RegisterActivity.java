@@ -11,6 +11,7 @@ import android.widget.Toast;
 import sec.com.hong.viet.orderfood.DAO.NhanVietDAO;
 import sec.com.hong.viet.orderfood.DTO.NhanVienDTO;
 import sec.com.hong.viet.orderfood.R;
+import sec.com.hong.viet.orderfood.view.fragments.DatePickerPopupFragment;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener, View.OnFocusChangeListener {
 
@@ -82,6 +83,15 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onFocusChange(View view, boolean b) {
+        switch (view.getId()){
+            case R.id.edt_ngay_sinh:
+                if(b){
+                    DatePickerPopupFragment datePickerPopupFragment = new DatePickerPopupFragment();
+                    datePickerPopupFragment.show(getFragmentManager(), "Ngay Sinh");
+                }
+
+                break;
+        }
 
     }
 }
