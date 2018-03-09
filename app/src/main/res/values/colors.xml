@@ -7,4 +7,7 @@
     <color name="colorWhite">#FFF</color>
     <color name="colorGreen">#459E49</color>
     <color name="colorOrg">#EE6B00</color>
+    <color name="colorBgLogin">#619126</color>
+    <color name="colorBlue">#146EB7</color>
+    <color name="colorRed">#EC6B00</color>
 </resources>

@@ -3,4 +3,5 @@
     <dimen name="size30dp">30dp</dimen>
     <dimen name="size10dp">10dp</dimen>
     <dimen name="size20dp">20dp</dimen>
+    <dimen name="size150dp">150dp</dimen>
 </resources>

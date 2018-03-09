@@ -2,6 +2,7 @@ package sec.com.hong.viet.orderfood.DAO;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import sec.com.hong.viet.orderfood.DTO.NhanVienDTO;
@@ -29,5 +30,24 @@ public class NhanVietDAO {
 
         long kiemtra = database.insert(CreateDatabaseOrderFood.TB_NHANVIEN, null, contentValues);
         return  kiemtra;
+    }
+
+    public boolean kiemTraNV(){
+        String truyvan = "SELECT * FROM " + CreateDatabaseOrderFood.TB_NHANVIEN;
+        Cursor cursor = database.rawQuery(truyvan, null);
+        if (cursor.getCount() != 0){
+            return true;
+        }else
+            return false;
+    }
+
+    public boolean checkLogin(String name, String pw){
+        String truyvan = "SELECT * FROM " + CreateDatabaseOrderFood.TB_NHANVIEN + " WHERE " + CreateDatabaseOrderFood.TB_NHANVIEN_TENNV
+                + " = " + "'" + name +"'" +" AND "+ CreateDatabaseOrderFood.TB_NHANVIEN_MATKHAU + " = " + "'" + pw +"'";
+        Cursor cursor = database.rawQuery(truyvan, null);
+        if (cursor.getCount() != 0){
+            return true;
+        }else
+            return false;
     }
 }

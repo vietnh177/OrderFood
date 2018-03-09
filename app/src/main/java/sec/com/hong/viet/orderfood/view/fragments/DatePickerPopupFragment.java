@@ -24,10 +24,10 @@ public class DatePickerPopupFragment extends DialogFragment implements DatePicke
         int iThang = calendar.get(Calendar.MONTH);
         int iDay = calendar.get(Calendar.DAY_OF_MONTH);
         DatePickerDialog datePickerDialog = new DatePickerDialog(getActivity(), this, iDay,iThang, iNam );
-
         return datePickerDialog;
 
     }
+
 
     @Override
     public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {

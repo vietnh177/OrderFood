@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="str_warning_wrong_input_login" type="id">Vui long nhap du ten va mat khau</item>
+    <item name="str_login_success" type="id">Login success</item>
+</resources>

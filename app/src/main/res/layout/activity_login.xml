@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgLogin">
+
+    <ImageView
+        android:layout_width="@dimen/size150dp"
+        android:layout_height="@dimen/size150dp"
+        android:src="@mipmap/logodangnhap"
+        android:layout_toRightOf="@id/title_dang_nhap"
+        android:layout_marginTop="@dimen/size30dp"/>
+    <TextView
+        android:id="@+id/title_dang_nhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_khung_dang_nhap"
+        android:text="@string/str_dang_nhap"
+        android:textSize="@dimen/size30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="@dimen/size10dp"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:id="@+id/layout_khung_dang_nhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_dang_nhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@mipmap/user"
+            android:drawablePadding="@dimen/size10dp"
+            android:hint="@string/str_ten_dang_nhap"
+            android:padding="@dimen/size10dp"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/edt_mat_khau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_marginRight="@dimen/size10dp"
+            android:layout_marginBottom="@dimen/size10dp"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@mipmap/password"
+            android:drawablePadding="@dimen/size10dp"
+            android:hint="@string/str_mat_khau"
+            android:padding="@dimen/size10dp"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btn_dang_nhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/colorBlue"
+            android:text="@string/str_dang_nhap"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_dang_ky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_marginRight="@dimen/size10dp"
+            android:background="@color/colorRed"
+            android:text="@string/str_dang_ki"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</RelativeLayout>

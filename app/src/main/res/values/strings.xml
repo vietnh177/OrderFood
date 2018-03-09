@@ -12,4 +12,12 @@
     <string name="err_input">Nhap thieu thong tin</string>
     <string name="nhap_thanh_cong">Nhap du lieu nhan vien THANH CONG</string>
     <string name="nhap_that_bai">Nhap du lieu nhan vien THAT BAI</string>
+    <string name="str_ten_dang_nhap">Ten Dang Nhap</string>
+    <string name="str_mat_khau">Mat Khau</string>
+    <string name="str_dang_nhap">Dang nhap</string>
+    <string name="str_dang_ki">Dang ki</string>
+    <string name="str_warning_wrong_input_login">Vui long nhap du thong tin ten va mat khau</string>
+    <string name="str_login_success">Dang nhap thanh cong</string>
+    <string name="str_dialog_register_title">Dang nhap that bai</string>
+    <string name="str_dialog_register_body">Ban co muon chuyen sang trang dang ky khong?</string>
 </resources>
