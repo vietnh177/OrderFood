@@ -20,4 +20,15 @@
     <string name="str_login_success">Dang nhap thanh cong</string>
     <string name="str_dialog_register_title">Dang nhap that bai</string>
     <string name="str_dialog_register_body">Ban co muon chuyen sang trang dang ky khong?</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="str_trang_chu">Trang chu</string>
+    <string name="str_thuc_don">Thuc don</string>
+    <string name="str_nhan_vien">Nhan vien</string>
+    <string name="str_thong_ke">Thong ke</string>
+    <string name="str_cai_dat">Cai dat</string>
 </resources>

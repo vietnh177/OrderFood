@@ -63,6 +63,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         startActivity(i);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        kiemTraHienThi();
+    }
+
     @SuppressLint("ResourceType")
     private void doLogin() {
         String sName = edt_dang_nhap.getText().toString();
@@ -71,6 +77,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             Toast.makeText(this, getResources().getString(R.string.str_warning_wrong_input_login), Toast.LENGTH_SHORT).show();
         }else if(nhanVietDAO.checkLogin(sName, sPw)){
             Toast.makeText(this, getResources().getString(R.string.str_login_success), Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this, MainActivity.class);
+            i.putExtra("tennv", sName);
+            startActivity(i);
+            clearData();
         }else {
             showDialogRegister();
         }
@@ -95,5 +105,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         });
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
+    }
+
+    private void clearData(){
+        edt_dang_nhap.setText("");
+        edt_mk.setText("");
     }
 }

@@ -74,8 +74,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             }
             nv.setGioiTinh(sGioiTinh);
             long kiemtra = nhanVietDAO.themMoiNhanVien(nv);
-            if(kiemtra != 0)
+            if(kiemtra != 0){
                 Toast.makeText(this, getResources().getString(R.string.nhap_thanh_cong) + kiemtra, Toast.LENGTH_SHORT).show();
+                finish();
+            }
             else
                 Toast.makeText(this, getResources().getString(R.string.nhap_that_bai), Toast.LENGTH_SHORT).show();
         }

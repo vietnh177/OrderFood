@@ -10,4 +10,5 @@
     <color name="colorBgLogin">#619126</color>
     <color name="colorBlue">#146EB7</color>
     <color name="colorRed">#EC6B00</color>
+    <color name="color_bg_nav">#D3852B</color>
 </resources>

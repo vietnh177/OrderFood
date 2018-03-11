@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_trang_chu"
+            android:icon="@mipmap/trangchu"
+            android:title="@string/str_trang_chu" />
+        <item
+            android:id="@+id/nav_thuc_don"
+            android:icon="@mipmap/banan"
+            android:title="@string/str_thuc_don" />
+        <item
+            android:id="@+id/nav_nhan_vien"
+            android:icon="@mipmap/nhanvien"
+            android:title="@string/str_nhan_vien" />
+        <item
+            android:id="@+id/nav_thong_ke"
+            android:icon="@mipmap/thongke"
+            android:title="@string/str_thong_ke" />
+        <item
+            android:id="@+id/nav_cai_dat"
+            android:icon="@mipmap/caidat"
+            android:title="@string/str_cai_dat" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>
